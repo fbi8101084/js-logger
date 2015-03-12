@@ -47,7 +47,7 @@
 
     if ('undefined' !== typeof jQuery) {
         jQuery(function () {
-            jQuery('<div>').ajaxError(function (event, request, settings, exception) {
+            jQuery(document).ajaxError(function (event, request, settings, exception) {
                 fg.js_logger('AjaxError:' + settings.type + ' ' + settings.url + ' ' + request.status + ' (' + request.statusText + '):' + exception);
             });
         });

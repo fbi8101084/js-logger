@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Project startup</title>
+    <title>js logger demo</title>
     <link rel="stylesheet" href="dist/css/style.min.css"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="dist/js/all.src.js"></script>
 </head>
 <body>
-<p class="hello">Hello Project !!</p>
+<button onclick="error1()">Make a JS Error</button>
+(See in console)
+
+<br/>
+
+<button onclick="error2()">Make a jquery ajax error</button>
+(See in console)
+
+<script>
+    var error1 = function() {
+        aa.bb = c;
+    };
+
+    var error2 = function() {
+        $.get( "ajax/missing.html" );
+    };
+</script>
 </body>
 </html>

@@ -23,10 +23,10 @@ gulp.task('biuld:js', function() {
     gulp.src(paths.js)
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
-        .pipe(concat('all.src.js'))
+        .pipe(concat('js-logger.src.js'))
         .pipe(gulp.dest('./dist/js/'))
         .pipe(uglify())
-        .pipe(rename('all.min.js'))
+        .pipe(rename('js-logger.min.js'))
         .pipe(gulp.dest('./dist/js/'));
 });
 

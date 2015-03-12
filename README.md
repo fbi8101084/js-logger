@@ -1,6 +1,7 @@
 # js-logger
 
 - 這是一個可以幫你 catch 所有 js error 包括 jquery error 等事件，並且可以自定發生 error 的 callback
+- Demo: http://fbi8101084.github.io/js-logger/
 
 ### 開發說明
 ===

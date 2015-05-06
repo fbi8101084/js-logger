@@ -12,7 +12,7 @@
                 console.log(message);
             }
             (new Image()).src =
-                '//error.fgplug.in/' + fg.js_error_type + '.gif' +
+                '//fgerr.fashionguide.com.tw/' + fg.js_error_type + '.gif' +
                 '?message=' + encodeURIComponent(message) +
                 '&from=' + encodeURIComponent(document.location);
         };
